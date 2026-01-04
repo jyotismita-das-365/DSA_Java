@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--Draw green rectangle in canvas space-->
+  <!-- <canvas id="mycanvas" width="300" height="200" style="border: 1px solid #c3c3c3;"></canvas>
+
+  <script>
+    var canvas = document.getElementById('mycanvas');
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = 'green';
+    ctx.fillRect(0,0,190,95);
+  </script> -->
+
+  <canvas id="mycanvas" width="200" height="100" style="border: 1px solid #1f1a1a;"></canvas>
+
+  <script>
+    var canvas = document.getElementById('mycanvas');
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+  </script>
+</body>
+</html>
