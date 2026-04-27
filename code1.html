@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#675d4e",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#f5dece",
+                    "secondary-fixed": "#efe0cd",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "surface-container": "#ffeadb",
+                    "surface-container-low": "#fff1e8",
+                    "on-primary-container": "#ae8d87",
+                    "inverse-primary": "#e3beb8",
+                    "outline": "#827472",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "surface-tint": "#745853",
+                    "secondary-container": "#efe0cd",
+                    "on-secondary-fixed": "#221a0f",
+                    "on-secondary-fixed-variant": "#4f4538",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "on-secondary-container": "#6d6354",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "tertiary": "#735c00",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#2b1613",
+                    "outline-variant": "#d3c3c0",
+                    "background": "#fff8f5",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#ffdad4",
+                    "surface-bright": "#fff8f5",
+                    "on-surface": "#25190f",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#241a00",
+                    "tertiary-fixed": "#ffe088",
+                    "primary-fixed-dim": "#e3beb8",
+                    "surface-container-highest": "#f5dece",
+                    "on-surface-variant": "#504442",
+                    "inverse-on-surface": "#ffeee2",
+                    "surface-container-high": "#fbe4d3",
+                    "primary": "#271310",
+                    "on-tertiary-container": "#4e3d00",
+                    "surface-dim": "#ecd6c6",
+                    "surface": "#fff8f5",
+                    "secondary-fixed-dim": "#d2c4b2",
+                    "error-container": "#ffdad6",
+                    "on-background": "#25190f",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#cba72f",
+                    "primary-container": "#3e2723",
+                    "inverse-surface": "#3b2e23"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "h2": ["Noto Serif"],
+                    "h3": ["Noto Serif"],
+                    "h1": ["Noto Serif"],
+                    "label": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h2": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-4 h-16 bg-[#F5E6D3] dark:bg-stone-900 border-b border-[#3E2723]/10 shadow-sm shadow-[#3E2723]/5">
+<button class="transition-all duration-300 hover:opacity-80 text-[#3E2723] dark:text-stone-100 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-lg font-serif italic text-[#3E2723] dark:text-stone-100">Probake Supply Co.</h1>
+<button class="transition-all duration-300 hover:opacity-80 text-[#3E2723] dark:text-stone-100 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[751px] w-full flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Artisanal baking ingredients" class="w-full h-full object-cover brightness-[0.4]" data-alt="Close-up of premium baking flour, dark chocolate chunks, and vanilla pods on a rustic wooden table with soft warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA66C61nwEP8aJ53gShUFkMyjQKxGdd2gzxOci1DkGuew2SqxB5QAfo8IWMhI0kwdwH21gbVWr2R1RgcfCnUjZXbhweMUncbcQt1ZK501Mma_Gv14-Nu5AwrT5QNXB4uQf1kOkjet2yh4xk4gYZyAiJnd6lrBlHkLu9NmKTMtcPwWDk3KiYhpD4xrNdk3ea4Hu8jeYr0Iam1NTh-6SIFp392RfARz_0miTmKj3MWFHMgs-IfTIkOjGGzTqMII6-tNMb8UB9h8rXjUId"/>
+</div>
+<div class="relative z-10 space-y-6">
+<h2 class="font-h1 text-h1 text-surface-container-lowest leading-tight">Premium Baking Ingredients</h2>
+<p class="font-body-lg text-body-lg text-surface-container-low max-w-xs mx-auto">Your One-Stop Shop for Bakers &amp; Businesses</p>
+<div class="flex flex-col gap-4 mt-8 px-4">
+<button class="bg-primary-container text-surface-container-lowest py-4 px-8 rounded-lg font-label uppercase tracking-widest shadow-lg transition-all hover:bg-[#D4AF37]">
+                        Shop Now
+                    </button>
+<button class="border-2 border-[#D4AF37] text-[#D4AF37] py-4 px-8 rounded-lg font-label uppercase tracking-widest bg-black/20 backdrop-blur-sm transition-all hover:bg-[#D4AF37]/10">
+                        Order on WhatsApp
+                    </button>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-16 px-6 bg-surface">
+<div class="text-center mb-10">
+<h2 class="font-h2 text-h2 text-primary mb-2">Essential Categories</h2>
+<div class="w-12 h-1 bg-tertiary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Category Item -->
+<div class="flex flex-col items-center group">
+<div class="w-full aspect-square rounded-full border-2 border-transparent group-hover:border-[#D4AF37] p-1 transition-all duration-300">
+<div class="w-full h-full rounded-full overflow-hidden shadow-sm">
+<img alt="Fine Flour" class="w-full h-full object-cover" data-alt="Close up texture of fine white artisanal bread flour being sifted onto a clean surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsA9d-1V6whOdXW2RwvP5NI1guQfxEOeTou0t-ZQOTQXY7fJDew0XE5KVV9tfoRktXn5gieKwwV5Sha7573VLoWZZuVTRxk78Yq3x4IMKYZ9ZZMENaXFA4ATD4FBxeklObDzJZqtkc0nvoQVnl-4DolNM8sDJwNp14agz07iON_-xnwXIFN_QZOiQN3OfXVB1sL35QE-NK_0KKEQK3R5H5sjokJ9SfPIlHunVehDej_ctJ8cgS1aIpAjNcwGXEniudUoV1-5jXOOUG"/>
+</div>
+</div>
+<span class="mt-4 font-label text-primary">Flour</span>
+</div>
+<!-- Category Item -->
+<div class="flex flex-col items-center group">
+<div class="w-full aspect-square rounded-full border-2 border-transparent group-hover:border-[#D4AF37] p-1 transition-all duration-300">
+<div class="w-full h-full rounded-full overflow-hidden shadow-sm">
+<img alt="Raw Sugar" class="w-full h-full object-cover" data-alt="Golden brown raw sugar crystals in a ceramic bowl under soft warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB07ZK-6AY2g-eNUUID0X2Z66S45xzViyPB74UfxIUO9KZVTWUMJj5cl7AI_Gws74qWswto13M_1Z34Xk4ch48fSYoX-flOZJAWFWMazbvlNoBpGFKzCLv3D0CyVPCpXf3oeE0wfarNpUaPvFyTRGOa23V0cXdAhe5fgh3wUhN_qWUaAQiGfEMqWoCyy9RD-InRk12EuXObzDxnG0Nda48RYjGcJpH5vO32NpxXzK4T6jDa-VlCoJOzsMjy0dkSRAW6brKyvkLkdpjG"/>
+</div>
+</div>
+<span class="mt-4 font-label text-primary">Sugar</span>
+</div>
+<!-- Category Item -->
+<div class="flex flex-col items-center group">
+<div class="w-full aspect-square rounded-full border-2 border-transparent group-hover:border-[#D4AF37] p-1 transition-all duration-300">
+<div class="w-full h-full rounded-full overflow-hidden shadow-sm">
+<img alt="Premium Chocolate" class="w-full h-full object-cover" data-alt="Rich dark chocolate blocks and cocoa powder arranged artistically on a dark stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATmA8kLUI_nDpAjpUi5tnGLpyPGC0UcaS_siSgqC3mgjARUvkVqYAT7oBw42RGfbheZm9euPpsx2gESb6IZvWTv2ogY5eoXbj1u5qE1VD6k9B0-flsPX6aYO43JI3YFnlc0TpebEZ9zW7qp2wUZfkEdgXsbWjpy4w6KcNx6h5-YEU_3eY0xgx0tvrOeoTze9o3cqonQ19kOTc-uFWkhrdv6uGCQf5kZOu2tcpwtIXY3rI_K9UX1b8W-hYP-eaQeJ0D5ZG-QKyxhYwQ"/>
+</div>
+</div>
+<span class="mt-4 font-label text-primary">Chocolate</span>
+</div>
+<!-- Category Item -->
+<div class="flex flex-col items-center group">
+<div class="w-full aspect-square rounded-full border-2 border-transparent group-hover:border-[#D4AF37] p-1 transition-all duration-300">
+<div class="w-full h-full rounded-full overflow-hidden shadow-sm">
+<img alt="Pastry Decor" class="w-full h-full object-cover" data-alt="Colorful gourmet pastry decorations and gold leaf accents for professional cake decorating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIQo_SEYsCAWxOSMA9D5At9ytScyYjcs69QdIqXeVyR6YnSU1ivavrBsr9z2zdRpKQi8gIQQk8_ioOvo8Irqli218Q8PApInUczTDjmgYHT7_MjnJmpsjl_km5SrvTE-7ybImRJ7n6NQS9uTzXIX1do8oS7DTMYnGCHG17ZH1-eXwQS3AInn9pSSvWm3TFrzqwd-rJBgf5m9Lzq_HqfgUV1aRZronkoHevbz-0lljP6dnUfx7n4xIx3Z1B-F2fUYFEw_qMJojZomJN"/>
+</div>
+</div>
+<span class="mt-4 font-label text-primary">Decor</span>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-16 px-6 bg-surface-container-low">
+<div class="space-y-12">
+<div class="flex items-start gap-6">
+<div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-tertiary-container text-on-tertiary-container shadow-sm">
+<span class="material-symbols-outlined" data-icon="star_border">star_border</span>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-primary mb-2">High Quality Ingredients</h3>
+<p class="font-body-md text-on-surface-variant">Sourced from the finest global mills and producers for consistent results every time.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-tertiary-container text-on-tertiary-container shadow-sm">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-primary mb-2">Bulk Pricing Available</h3>
+<p class="font-body-md text-on-surface-variant">Scale your business with competitive wholesale rates on all our professional supplies.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-tertiary-container text-on-tertiary-container shadow-sm">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-primary mb-2">Fast Delivery</h3>
+<p class="font-body-md text-on-surface-variant">Reliable logistics ensuring your atelier never runs out of the essentials you need.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Wholesale Banner -->
+<section class="relative py-20 px-6 text-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Wholesale supplies" class="w-full h-full object-cover brightness-[0.3]" data-alt="A modern professional bakery kitchen with large sacks of flour and stainless steel equipment in soft afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcTh0H3-dmrSaytJHbuAQHUgLLYDLjK46tWM38kwIgHgKWNFpOYHu6LWXYk_y3v0nVEhqhU3hwcUUrpN0e1XTmbkyHr66TU04IgUsMwtZmkKxnH_iM8r7xRX1HP6ha9e4-cXoyBvdaEhr2D332MbZtOVnYJEedGY6rVO2u1YmuFHActsfzWitHdkC0B51-Ow_wvFVHdilZfXd8JBV0CmO97BE7w7-AIq6RsbofcnKWJVc2Y31bqpHhal-6yMyLtaAZKoU9zGM-khYN"/>
+</div>
+<div class="relative z-10 space-y-6">
+<h2 class="font-h2 text-h2 text-surface-container-lowest">For Bakers, Cafes &amp; Home Businesses</h2>
+<p class="font-body-md text-surface-container-low max-w-xs mx-auto">Unlock special pricing and priority support for your growing business.</p>
+<button class="inline-block mt-4 bg-[#D4AF37] text-primary-container py-4 px-10 rounded-lg font-label uppercase tracking-widest shadow-xl transition-all hover:scale-105 active:scale-95">
+                    Get Wholesale Price
+                </button>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 px-6 bg-surface overflow-hidden">
+<h2 class="font-h2 text-h2 text-primary text-center mb-10 italic">Atelier Voices</h2>
+<div class="flex flex-col gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-[#3E2723]/5">
+<div class="flex gap-1 text-[#D4AF37] mb-4">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-h3 text-lg italic text-primary mb-4 leading-relaxed">"The consistency of their bread flour is unmatched. My sourdough has never looked better."</p>
+<div class="flex items-center gap-3">
+<div class="w-6 h-px bg-[#D4AF37]"></div>
+<span class="font-label text-primary uppercase text-xs">Clara M., Home Baker</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-[#3E2723]/5">
+<div class="flex gap-1 text-[#D4AF37] mb-4">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-h3 text-lg italic text-primary mb-4 leading-relaxed">"Wholesale pricing helped our cafe scale without compromising on the quality of our ingredients."</p>
+<div class="flex items-center gap-3">
+<div class="w-6 h-px bg-[#D4AF37]"></div>
+<span class="font-label text-primary uppercase text-xs">Julian R., Cafe Owner</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-20 px-6 text-center bg-primary-container">
+<h2 class="font-h2 text-h2 text-surface-container-lowest mb-4">Start Your Baking Journey Today</h2>
+<p class="font-body-md text-surface-container-low/80 mb-10">Quality ingredients delivered to your doorstep.</p>
+<button class="bg-[#D4AF37] text-primary-container py-5 px-14 rounded-lg font-label uppercase tracking-[0.2em] shadow-xl transition-all">
+                Order Now
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#3E2723] dark:bg-black text-[#F5E6D3] dark:text-stone-300 py-12 px-8 flex flex-col items-center space-y-8 text-center border-t border-[#D4AF37]/20">
+<div class="text-[#D4AF37] font-serif italic text-2xl">Probake Supply Co.</div>
+<nav class="flex flex-col gap-4">
+<a class="font-sans text-[10px] tracking-widest uppercase text-stone-400 hover:text-[#D4AF37] transition-opacity" href="#">Privacy Policy</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-stone-400 hover:text-[#D4AF37] transition-opacity" href="#">Terms of Service</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-stone-400 hover:text-[#D4AF37] transition-opacity" href="#">Shipping Info</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-stone-400 hover:text-[#D4AF37] transition-opacity" href="#">Contact Us</a>
+</nav>
+<div class="flex gap-6">
+<a class="text-[#D4AF37] hover:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="text-[#D4AF37] hover:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="thumb_up">thumb_up</span>
+</a>
+<a class="text-[#D4AF37] hover:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+</div>
+<p class="font-sans text-[10px] tracking-widest uppercase max-w-[200px] leading-relaxed text-stone-500">
+            © 2024 Probake Supply Co. Crafted for the Modern Atelier.
+        </p>
+</footer>
+</body></html>
